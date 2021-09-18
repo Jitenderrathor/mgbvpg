@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M.G. Balika P.G. College</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+<link href="css/skitter.styles.css" type="text/css" media="all" rel="stylesheet" />
+
+<script src="js/jquery-1.6.3.min.js">          </script>
+
+<script src="js/jquery.easing.1.3.js">         </script>
+
+<script src="js/jquery.animate-colors-min.js"> </script>
+
+<script src="js/jquery.skitter.min.js">        </script>
+
+<script>
+
+	$(document).ready(function() {
+	var options = {};
+	if (document.location.search) {
+	var array = document.location.search.split('=');
+	var param = array[0].replace('?', '');
+	var value = array[1];
+
+	if (param == 'animation') {
+	    options.animation = value;
+	}
+
+	else if (param == 'type_navigation') {
+   	if (value == 'dots_preview') {
+	$('.border_box').css({'marginBottom': '40px'});
+	options['dots'] = true;
+	options['preview'] = true;
+	}
+	else {
+	options[value] = true;
+	if (value == 'dots') $('.border_box').css({'marginBottom': '40px'});
+}
+}
+}
+
+$('.box_skitter_large').skitter(options);
+	// Highlight
+	$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+
+});
+
+</script>
+
+
+<script language="JavaScript" type="text/javascript" src="ajax_captcha.js"></script>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+<script Language="JavaScript" Type="text/javascript">
+ 
+
+function validateForm(theForm)
+{
+ // ************************** Bill Form Fields Checks *******************
+
+//name
+
+  if (theForm.name.value.length < 1
+   ||!IsValidString(theForm.name.value,"ABCDEFGHIJKLMNOPQRSTUVWXYZ_-. "))
+  {
+    alert("Please enter a valid value for the \"Name\" field.");
+    //theForm.name.value = "";
+    theForm.name.focus();
+    return (false);
+  }
+
+//Email
+  	 
+  if (theForm.email.value.length < 4
+   || theForm.email.value.indexOf ('.', 0) < 6 
+   || theForm.email.value.indexOf ('@', 0) < 3
+   || theForm.email.value.indexOf ('@', 0) >= theForm.email.value.indexOf ('.', 0) - 3
+   ||!IsValidString(theForm.email.value,"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-.@"))
+  {
+    alert("Please enter a valid value for the \"Email\" field.");
+    theForm.email.value = "";
+    theForm.email.focus();
+    return (false);
+  }
+  
+  var arrEmailFields = theForm.email.value.split("@");
+  if(arrEmailFields.length > 2)
+  {
+    alert("Please enter a valid value for the \"Email\" field.");
+    theForm.email.value = "";
+    theForm.email.focus();
+    return (false);
+  }
+  
+//phone
+
+  if (theForm.phone.value.length < 10
+       ||!IsValidString(theForm.phone.value,"01234567890-"))
+  {
+    alert("Please enter Phone No with STD Code in \" 01122334455 \" format ");
+    theForm.phone.focus();
+    return (false);
+  }
+  
+//Query
+  
+ if (theForm.query.value.length < 4
+   ||!IsValidString(theForm.address.value,"1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ_-., \/@#%&*()!'?<>"))
+  {
+    alert("Please enter a value for the \"Query\" field.");
+    theForm.query.focus();
+    return (false);
+ 
+  }
+ 
+return true;
+}
+
+//check for valid numeric strings
+function IsNumeric(strValidate)
+{
+  var strValidChars = "0123456789";
+  var strChar;
+  var bolResult = true;
+
+  //string must consist of valid characters above
+  for (i = 0; i < strValidate.length && bolResult; i++)
+  {
+    strChar = strValidate.charAt(i);
+    if (strValidChars.indexOf(strChar) == -1)
+      bolResult = false;
+  }
+
+  return bolResult;
+}    
+//check for valid Email strings
+function IsValidString(strValidate,strOK)
+{
+  var strValidChars = "" + strOK;
+  var strChar;
+  var bolResult = true;
+
+  strValidate = strValidate.toUpperCase();
+
+  //string must consist of valid characters above
+  for (i = 0; i < strValidate.length && bolResult; i++)
+  {
+    strChar = strValidate.charAt(i);
+    if (strValidChars.indexOf(strChar) == -1)
+      bolResult = false;
+  }
+
+  return bolResult;
+}
+</script>
+
+
+</head>
+
+<body>
+  <div id="holder">
+  
+  <div id="top">
+  <a href="index.html"><div style="float:left; width:650px; height:100px;"></div></a>
+  <div id="top-con">
+  <div class="con">दूरभाष एवं फैक्स</div>
+  <div class="con-num">: 05612 - 241393</div>
+  </div>
+  </div>
+  
+  <div class="menu">
+  <a href="about-us.html"> परिचय              </a>
+  <a href="building-and-library.html"> भवन तथा पुस्तकालय     </a>
+  <a href="admission.html"> प्रवेश एवं आरक्षण       </a>
+  <a href="students-facilities.html"> छात्रा सुविधा           </a>
+  <a href="comference.html"> समिति             </a>
+  <a href="running-syllabus.html"> संचालित पाठ्यक्रम       </a>
+  <a href="facilities.html"> मेनेजमेंट एवं शिक्षक  </a>
+  <a href="photo.html"> फेाटो गेलेरी        </a> 
+  <a href="enquiry.html">सम्पर्क करें      </a> 
+  </div>
+  
+  <div class="do-clr"></div> 
+  
+  <div class="banner">
+  
+<div class="box_skitter box_skitter_large">
+<ul>
+  <li> <img src="images/banner.jpg" class="fade" />   </li>
+  <li> <img src="images/banner-2.jpg" class="fade" />  </li>
+</ul>
+</div>
+ 
+</div>
+  
+  <div class="content-cmn">
+  <div class="headline-cmn">सम्पर्क करें</div>
+  
+   <form method="POST" action="captcha.php" onSubmit="return validateForm(this)">
+    <table width="100%" border="0" cellspacing="0" cellpadding="3">
+
+           <tr>
+             <td colspan="2" align="left" valign="top">
+              <strong style="font-size:16px;">महात्मा गाॅधी बालिका स्नातकोत्तर महाविद्यालय, फिरोजाबाद </strong>  <br />
+  <strong style="font-size:16px;">Phone : <strong style="font-size:16px;">05612 - 241393</strong></strong>    <br />
+  <strong style="font-size:16px;">Email : <strong style="font-size:16px;"><a href="mailto:info@mgbvpgcollege.com">info@mgbvpgcollege.com</a></strong></strong>
+  <div class="do-clr"></div>             </td>
+             <td width="45%" rowspan="10" align="center" valign="middle"><img src="images/enquery-2.jpg" width="365" height="338" /></td>
+           </tr>
+           <tr>
+             <td colspan="2" align="left" valign="top">--------------------------------------------------------</td>
+           </tr>
+           <tr>
+           <td width="10%" align="left" valign="top"> Name </td>
+           <td width="45%" align="left" valign="top"><input type="text" name="name" id="name" value="" class="in-design" tabindex="1"></td>
+        </tr>
+           
+           <tr>
+             <td align="left" valign="top"> Email </td>
+           <td width="45%" align="left" valign="top"> <input type="text" name="email" id="email" value="" class="in-design" tabindex="1" /> </td>
+          </tr>
+    
+    
+           <tr>
+             <td align="left" valign="top"> Phone </td>
+             <td width="45%" align="left" valign="top"><input type="text" name="phone" id="phone" value="" class="in-design" tabindex="1"></td>
+           </tr>
+          <tr>
+            <td align="left" valign="top"> Query </td>
+    <td width="45%" align="left" valign="top"><textarea name="query" rows="5" class="in-design2" id="query" tabindex="1" type="text" value=""></textarea></td>
+        </tr>
+          <tr>
+            <td align="left" valign="top">&nbsp;</td>
+    <td width="45%" align="left" valign="top"> Enter the Code </td>
+        </tr>
+          <tr>
+            <td align="left" valign="top">&nbsp;</td>
+    <td width="45%" align="left" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="17%"><input style="width:150px; border:1px solid #CCCCCC;" id="txtCaptcha" type="text" name="txtCaptcha" value="" maxlength="10" size="32" /></td>
+    <td width="83%"><img id="imgCaptcha" src="create_image.php" /></td>
+  </tr>
+</table>    </td>
+        </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="45%" align="left" valign="top"><input class="send" type="reset" name="Submit2" value="Reset" onclick="this.form.reset();" />
+    <input class="send" type="submit" name="Submit" value="Submit" /></td>
+    </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><div id="result" style="font-size:14px; height:20px; overflow:hidden; font-weight:bold;">&nbsp;</div></td>
+    </tr>
+</table>
+    </form>
+
+  <div class="do-clr"></div>
+  </div>
+  
+  <div class="bottom">
+  <span style="float:left;">द्धारा : CIPL</span>
+  <span style="float:right;"><a href="about-us.html">परिचय</a> | <a href="admission.html">प्रवेश एवं आरक्षण</a> |<a href="enquiry.html"> सम्पर्क करें</a></span>  </div>
+  
+</div>
+
+
+</body>
+
+</html>

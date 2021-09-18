@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M.G. Balika P.G. College</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+<link href="css/skitter.styles.css" type="text/css" media="all" rel="stylesheet" />
+
+<script src="js/jquery-1.6.3.min.js">          </script>
+
+<script src="js/jquery.easing.1.3.js">         </script>
+
+<script src="js/jquery.animate-colors-min.js"> </script>
+
+<script src="js/jquery.skitter.min.js">        </script>
+
+<script>
+
+	$(document).ready(function() {
+	var options = {};
+	if (document.location.search) {
+	var array = document.location.search.split('=');
+	var param = array[0].replace('?', '');
+	var value = array[1];
+
+	if (param == 'animation') {
+	    options.animation = value;
+	}
+
+	else if (param == 'type_navigation') {
+   	if (value == 'dots_preview') {
+	$('.border_box').css({'marginBottom': '40px'});
+	options['dots'] = true;
+	options['preview'] = true;
+	}
+	else {
+	options[value] = true;
+	if (value == 'dots') $('.border_box').css({'marginBottom': '40px'});
+}
+}
+}
+
+$('.box_skitter_large').skitter(options);
+	// Highlight
+	$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+
+});
+
+</script>
+
+</head>
+
+<body>
+  <div id="holder">
+  
+  <div id="top">
+  <a href="index.html"><div style="float:left; width:650px; height:100px;"></div></a>
+  <div id="top-con">
+  <div class="con">दूरभाष एवं फैक्स</div>
+  <div class="con-num">: 05612 - 241393</div>
+  <div class="con-mail">: info@mgbvpgcollege.com</div>
+  </div>
+  </div><div class="menu"> <a href="about-us.html"> परिचय </a>
+  <a href="building-and-library.html"> भवन तथा पुस्तकालय </a>
+  <a href="admission.html"> प्रवेश एवं आरक्षण </a>
+  <a href="students-facilities.html"> छात्रा सुविधा </a>
+  <a href="comference.html"> समिति </a>
+  <a href="running-syllabus.html"> संचालित पाठ्यक्रम </a>
+  <a href="facilities.html"> मेनेजमेंट एवं शिक्षक </a>
+  <a href="prabhandh_samiti.html"> प्रबन्ध समिति </a>
+  <a href="photo.html">फोटो  गैलरी </a>
+  <a href="enquiry.html">सम्पर्क करें </a></div>
+  
+  <div class="do-clr"></div> 
+  
+  <div class="banner">
+  
+<div class="box_skitter box_skitter_large">
+<ul>
+  <li> <img src="images/banner.jpg" class="fade" />   </li>
+  <li> <img src="images/banner-2.jpg" class="fade" />  </li>
+</ul>
+</div>
+ 
+</div>
+  
+  <div class="content-cmn">
+  <div class="headline-cmn">प्रवेश एवं आरक्षण </div>
+  <img src="images/admission.png" hspace="10" vspace="10" align="right" />छात्राओं के प्र्रवेश एवं पंजीकरण हेतु महाविद्यालय की प्रवेश समिति है जो शासकीय नियमों के अन्र्तगत छात्राओं के प्रवेश में नियमानुसार अनुसूचित जाति‘/अनुसूचित जनजाति, अन्य पिछड़ा वर्ग को आरक्षण सुनिश्चित करते हुए प्रवेश देती है। भूतपूर्व सैनिक, स्वतन्त्रता संग्राम सैनानी के आश्रित तथा विकलागों को भी प्रतिनिधित्व प्राप्त होता है। 
+  <br/>  <br/>
+ 
+  
+  <strong style="color:#FF0000;"><a href="admission_manual/addmission_process 2018-19.pdf" target="_blank">प्रवेश नियमावली</a> <img src="images/new_animated.gif" alt="new" style="margin:0px 0px 0px 0px;" /></strong>
+  
+  <div class="do-clr"></div>
+  </div>
+  
+  <div class="bottom">
+  <span style="float:left;">द्धारा : CIPL</span>
+  <span style="float:right;"><a href="about-us.html">परिचय</a> | <a href="admission.html">प्रवेश एवं आरक्षण</a> |<a href="enquiry.html"> सम्पर्क करें</a></span>  </div>
+  
+</div>
+
+
+</body>
+
+</html>
